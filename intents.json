@@ -1,0 +1,924 @@
+{"intents":
+[
+            {
+             "tag":"unknown",
+             "patterns": ["he"," ","i","vhggkk","ho","12345"],
+             "responses":["Sorry,I can't understand"]
+            },
+            {
+             "tag":"greetings",
+             "patterns": ["hello","hey","hi","good day","greetings","what's up?","how is it going"],
+             "responses":["hello","hey!","what can i do for you?"]
+            },
+            {
+             "tag":"goodbye",
+             "patterns": ["cya","see you later","goodbye","have a good day","bye","cao","see ya"],
+             "responses":["have a nice day","goodbye"]
+            },
+            {
+             "tag":"age",
+             "patterns": ["how old","how old are you?","what is your age","how old are you","age?"],
+             "responses":["As long as our chat was","my owners are averagely 21 years!"]
+            },
+            {
+             "tag":"name",
+             "patterns": ["what is your name","what should i call you","what's your name?","who are you?","can you tell me your name"],
+             "responses":["you can call me MediQuic!","i am MediQuic!","i am MediQuic, Your medical assistant"]
+            },
+            {
+             "tag":"thanking",
+             "patterns": ["good","great","I'm impressed","amazing","you did great","i am completely clear now","welldone","nice!"],
+             "responses":["Thank You!","I did my job"]
+            },
+            {
+             "tag":"work",
+             "patterns": ["what do you do?","what is your job","what are your features!"],
+             "responses":["I am a chatbot, I can answer medical related queries like Medice Information, Nearby Hospitals, Knowledge about Therapy, Knowledge about Diseases and its preventions and First Aid Instruction."]
+            },
+            {
+             "tag":"problem",
+             "patterns": ["i think i have a problem","there is a problem","i want know about a disease"],
+             "responses":["Tell me about your symptoms!"]
+            },
+            {
+             "tag":"dosage",
+             "patterns": ["tell me the dosage of medicine","what is the dosage to intake the medicine"],
+             "responses":["Please consult a doctor to know about dosage of a particular medicine for your medical condition."]
+            },
+            {
+             "tag":"accuracy",
+             "patterns": ["how accurate are you?","how can i trust you?","how accurate the results are?"],
+             "responses":["I am providing the best results based on my trained data."]
+            },
+            {
+             "tag":"disease info provide",
+             "patterns": ["I want to know about a particular Disease!","can you provide me information about a Disease?","will you explain me about a particular Disease?"],
+             "responses":["Tell me the name of that Disease!"]
+            },
+            {
+             "tag":"nearby info provide",
+             "patterns": ["I want to know about nearby hospitals in my location","can you suggest me nearby hospitals","list of hospitals in my location","what are thhe nearby hospitals in my location"],
+             "responses":["Tell me the location!"]
+            },
+            {
+             "tag":"COVID-19 explaination",
+             "patterns": ["what is COVID-19?","tell me about COVID-19","what cause COVID-19","what is corona virus","what is corona"],
+             "responses":["\nCOVID-19: COVID-19 is a respiratory illness caused by the novel coronavirus SARS-CoV-2. It can range from mild symptoms to severe respiratory distress and can be transmitted through respiratory droplets from an infected person."]
+            },
+            {
+             "tag":"Cancer explaination",
+             "patterns": ["what is Cancer?","tell me about Cancer","what cause Cancer"],
+             "responses":["\nCancer: Cancer refers to a group of diseases characterized by the abnormal growth of cells that can invade and spread to other parts of the body. It can affect various organs and is often life-threatening if not treated early."]
+            },
+            {
+             "tag":"HIV/AIDS explaination",
+             "patterns": ["what is HIV/AIDS?","tell me about HIV/AIDS","what cause HIV/AIDS","what is Human Immunodeficiency Virus","what is HIV","what is AIDS","what is acquired immunodeficiency syndrome"],
+             "responses":["\nHIV/AIDS: Human Immunodeficiency Virus (HIV) is a virus that attacks the immune system, leading to acquired immunodeficiency syndrome (AIDS). It weakens the immune system, making individuals vulnerable to infections and other complications."]
+            },
+            {
+             "tag":"Alzheimer's disease explaination",
+             "patterns": ["what is Alzheimer's disease?","tell me about Alzheimer's disease","what cause Alzheimer's disease"],
+             "responses":["\nAlzheimer's disease: Alzheimer's disease is a progressive brain disorder that affects memory, thinking, and behavior. It is the most common cause of dementia and gradually impairs daily functioning."]
+            },
+            {
+             "tag":"Stroke explaination",
+             "patterns": ["what is Stroke?","tell me about Stroke","what cause Stroke"],
+             "responses":["\nStroke: Stroke occurs when the blood supply to the brain is interrupted or reduced, leading to the death of brain cells. It can cause various neurological impairments, such as paralysis, speech difficulties, and cognitive deficits."]
+            },
+            {
+             "tag":"Tuberculosis explaination",
+             "patterns": ["what is Tuberculosis?","tell me about Tuberculosis","what cause Tuberculosis","what is TB"],
+             "responses":["\nTuberculosis (TB): Tuberculosis is an infectious disease caused by the bacteria Mycobacterium tuberculosis. It primarily affects the lungs but can also impact other organs. It spreads through the air when an infected person coughs or sneezes."]
+            },
+            {
+             "tag":"Ebola explaination",
+             "patterns": ["what is Ebola?","tell me about Ebola","what cause Ebola"],
+             "responses":["\nEbola: Ebola is a severe and often fatal viral disease caused by the Ebola virus. It leads to hemorrhagic fever and can cause widespread organ failure. Ebola is transmitted through contact with infected bodily fluids."]
+            },
+            {
+             "tag":"Malaria explaination",
+             "patterns": ["what is Malaria?","tell me about Malaria","what cause Malaria"],
+             "responses":["\nMalaria: Malaria is a mosquito-borne infectious disease caused by parasites of the Plasmodium genus. It causes flu-like symptoms and can lead to severe complications, especially in young children and pregnant women."]
+            },
+            {
+             "tag":"Influenza explaination",
+             "patterns": ["what is Influenza?","tell me about Influenza","what cause Influenza"],
+             "responses":["\nInfluenza (Flu): Influenza is a highly contagious respiratory illness caused by influenza viruses. It can lead to mild to severe symptoms, including fever, cough, sore throat, body aches, and fatigue. In some cases, it can result in complications such as pneumonia."]
+            },
+            {
+             "tag":"Dengue Fever explaination",
+             "patterns": ["what is Dengue Fever?","tell me about Dengue Fever","what cause Dengue Fever"],
+             "responses":["\nDengue Fever: Dengue fever is a mosquito-borne viral infection caused by the dengue virus. It can cause flu-like symptoms, including high fever, severe headache, joint and muscle pain, and rash. In severe cases, it can progress to dengue hemorrhagic fever or dengue shock syndrome."]
+            },
+            {
+             "tag":"Cholera explaination",
+             "patterns": ["what is Cholera?","tell me about Cholera","what cause Cholera"],
+             "responses":["\nCholera: Cholera is a bacterial infection caused by the bacterium Vibrio cholerae. It spreads through contaminated food and water and causes severe diarrhea and dehydration. If left untreated, it can be life-threatening."]
+            },
+            {
+             "tag":"Zika Virus explaination",
+             "patterns": ["what is Zika Virus?","tell me about Zika Virus","what cause Zika Virus"],
+             "responses":["\nZika Virus: Zika virus is a mosquito-borne viral infection primarily transmitted by Aedes mosquitoes. It can cause mild symptoms such as fever, rash, joint pain, and conjunctivitis. In pregnant women, it has been linked to birth defects, including microcephaly."]
+            },
+            {
+             "tag":"Hepatitis B explaination",
+             "patterns": ["what is Hepatitis B?","tell me about Hepatitis B","what cause Hepatitis B"],
+             "responses":["\nHepatitis B: Hepatitis B is a viral infection that affects the liver. It can be transmitted through contact with infected blood or other body fluids. Chronic infection can lead to liver damage, cirrhosis, and an increased risk of liver cancer."]
+            },
+            {
+             "tag":"Pneumonia explaination",
+             "patterns": ["what is Pneumonia?","tell me about Pneumonia","what cause Pneumonia"],
+             "responses":["\nPneumonia: Pneumonia is an infection that inflames the air sacs in one or both lungs. It can be caused by bacteria, viruses, or fungi. Symptoms include cough, chest pain, fever, and difficulty breathing. Severe cases can be life-threatening, especially in older adults and those with weakened immune systems."]
+            },
+            {
+             "tag":"Parkinson's disease explaination",
+             "patterns": ["what is Parkinson's disease?","tell me about Parkinson's disease","what cause Parkinson's disease"],
+             "responses":["\nParkinson's disease: Parkinson's disease is a progressive neurodegenerative disorder that affects movement. It is characterized by tremors, stiffness, slowness of movement, and difficulty with balance and coordination. The exact cause is unknown, and there is currently no cure."]
+            },
+            {
+             "tag":"Chronic kidney disease explaination",
+             "patterns": ["what is Chronic kidney disease?","tell me about Chronic kidney disease","what cause Chronic kidney disease"],
+             "responses":["\nChronic kidney disease: Chronic kidney disease refers to the gradual loss of kidney function over time. It can be caused by various conditions such as diabetes, high blood pressure, and certain genetic disorders. As kidney function declines, it can lead to complications and the need for dialysis or kidney transplantation."]
+            },
+            {
+             "tag":"Mental illnesses explaination",
+             "patterns": ["what is Mental illnesses?","tell me about Mental illnesses","what cause Mental illnesses"],
+             "responses":["\nMental illnesses (e.g., schizophrenia, bipolar disorder): Mental illnesses encompass a range of conditions that affect a person's thinking, mood, behavior, and overall mental well-being. Examples include schizophrenia, bipolar disorder, depression, and anxiety disorders. These conditions can significantly impact a person's quality of life and require appropriate diagnosis and treatment."]
+            },
+            {
+             "tag":"Headaches explaination",
+             "patterns": ["what is Headaches?","tell me about Headaches","what cause Headaches"],
+             "responses":["\nHeadaches: Headaches are characterized by pain or discomfort in the head or neck region. They can be caused by various factors such as tension, stress, sinus issues, migraines, or underlying health conditions."]
+            },
+            {
+             "tag":"Back pain explaination",
+             "patterns": ["what is Back pain?","tell me about Back pain","what cause Back pain"],
+             "responses":["\nBack pain: Back pain is a common condition that can be caused by muscle strains, poor posture, spinal issues, herniated discs, or underlying medical conditions. It can range from mild discomfort to severe and chronic pain."]
+            },
+            {
+             "tag":"Acid reflux explaination",
+             "patterns": ["what is Acid reflux?","tell me about Acid reflux","what cause Acid reflux"],
+             "responses":["\nAcid reflux: Acid reflux, or gastroesophageal reflux disease (GERD), is a condition where stomach acid flows back into the esophagus, causing heartburn, regurgitation, and discomfort. It can be triggered by certain foods, obesity, or lifestyle factors."]
+            },
+            {
+             "tag":"Anxiety explaination",
+             "patterns": ["what is Anxiety?","tell me about Anxiety","what cause Anxiety"],
+             "responses":["\nAnxiety: Anxiety disorders involve excessive and persistent worry or fear that can interfere with daily life. Symptoms may include restlessness, irritability, racing thoughts, difficulty concentrating, and physical symptoms such as rapid heartbeat or shortness of breath."]
+            },
+            {
+             "tag":"Gastroenteritis explaination",
+             "patterns": ["what is Gastroenteritis?","tell me about Gastroenteritis","what cause Gastroenteritis"],
+             "responses":["\nGastroenteritis: Gastroenteritis, also known as the stomach flu, is inflammation of the gastrointestinal tract. It is commonly caused by viral or bacterial infections and leads to symptoms such as diarrhea, vomiting, stomach cramps, nausea, and sometimes fever."]
+            },
+            {
+             "tag":"Sinusitis explaination",
+             "patterns": ["what is Sinusitis?","tell me about Sinusitis","what cause Sinusitis"],
+             "responses":["\nSinusitis: Sinusitis is the inflammation of the sinuses, which are air-filled cavities in the skull. It can be caused by a viral or bacterial infection, allergies, or structural abnormalities. Symptoms include facial pain or pressure, nasal congestion, headache, and thick nasal discharge."]
+            },
+            {
+             "tag":"Hyperthyroidism explaination",
+             "patterns": ["what is Hyperthyroidism?","tell me about Hyperthyroidism","what cause Hyperthyroidism"],
+             "responses":["\nHyperthyroidism: Hyperthyroidism is a condition in which the thyroid gland produces excessive thyroid hormones. It can cause symptoms such as weight loss, rapid heartbeat, increased sweating, anxiety, tremors, and fatigue."]
+            },
+            {
+             "tag":"Anemia explaination",
+             "patterns": ["what is Anemia?","tell me about Anemia","what cause Anemia"],
+             "responses":["\nAnemia: Anemia is a condition characterized by a deficiency of red blood cells or hemoglobin in the blood. It can result from various causes, including iron deficiency, vitamin B12 deficiency, or underlying medical conditions. Symptoms may include fatigue, weakness, pale skin, shortness of breath, and dizziness."]
+            },
+            {
+             "tag":"Cardiac arrest instruction",
+             "patterns": ["what to do when a person gets Cardiac arrest?","what are the instruction for Cardiac arrest","procedure to do in the situation like Cardiac arrest","tell me the first aid instruction for Cardiac arrest"],
+             "responses":["\nCardiac arrest: \n1.Call emergency services immediately. \n2.Begin cardiopulmonary resuscitation (CPR) by giving chest compressions at a rate of 100-120 compressions per minute. Push hard and fast in the center of the chest. \n3.If available, use an automated external defibrillator (AED) to deliver a shock if advised by the device."]
+            },
+            {
+             "tag":"Choking instruction",
+             "patterns": ["what to do when a person gets Choking?","what are the instruction for Choking","procedure to do in the situation like Choking","tell me the first aid instruction for Cardiac arrest"],
+             "responses":["\nChoking: \n1.If the person is conscious, encourage them to cough forcefully. \n2.If the person is unable to cough, stand behind them and give abdominal thrusts (Heimlich maneuver) by applying inward and upward pressure just above the navel until the object is dislodged or until emergency help arrives. \n3.If the person becomes unconscious, start CPR immediately."]
+            },
+            {
+             "tag":"Severe bleeding instruction",
+             "patterns": ["what to do when a person gets Severe bleeding?","what are the instruction for Severe bleeding","procedure to do in the situation like Severe bleeding","tell me the first aid instruction for Severe bleeding"],
+             "responses":["\nSevere bleeding: \n1.Apply direct pressure on the wound with a clean cloth or your hands to stop bleeding. \n2.Elevate the injured area if possible. \n3.If bleeding doesn't stop or is life-threatening, call emergency services."]
+            },
+            {
+             "tag":"Stroke instruction",
+             "patterns": ["what to do when a person gets Stroke?","what are the instruction for Stroke","procedure to do in the situation like Stroke","tell me the first aid instruction for Stroke"],
+             "responses":["\nStroke: \n1.Remember the acronym FAST: Face, Arms, Speech, Time. \n2.Face: Ask the person to smile and check if one side of their face droops. \n3.Arms: Ask the person to raise both arms and check if one arm drifts downward. \n4.Speech: Ask the person to repeat a simple phrase and check if their speech is slurred or strange. \n5.Time: If you observe any of these signs, call emergency services immediately."]
+            },
+            {
+             "tag":"Seizures instruction",
+             "patterns": ["what to do when a person gets Seizures?","what are the instruction for Seizures","procedure to do in the situation like Seizures","tell me the first aid instruction for Seizures"],
+             "responses":["\nSeizures: \n1.Protect the person from injury by clearing the area of any objects. \n2.Cushion their head and turn them on their side to prevent choking on saliva or vomit. \n3.Do not restrain the person or put anything in their mouth. \n4.Once the seizure subsides, stay with the person and offer reassurance until they fully recover."]
+            },
+            {
+             "tag":"Anaphylaxis instruction",
+             "patterns": ["what to do when a person gets Anaphylaxis?","what are the instruction for Anaphylaxis","procedure to do in the situation like Anaphylaxis","tell me the first aid instruction for Anaphylaxis"],
+             "responses":["\nAnaphylaxis (severe allergic reaction): \n1.If the person carries an epinephrine auto-injector (EpiPen), help them use it according to the instructions. \n2.Call emergency services immediately. \n3.Help the person stay in a comfortable position and monitor their breathing and vital signs."]
+            },
+            {
+             "tag":"Burns instruction",
+             "patterns": ["what to do when a person get Burns?","what are the instruction for Burns","procedure to do in the situation like Burns","tell me the first aid instruction for Burns"],
+             "responses":["\nBurns: \n1.Remove the person from the source of the burn and cool the burned area with cool (not cold) running water for about 10-20 minutes. \n2.Cover the burn loosely with a sterile non-stick bandage or clean cloth. \n3.Do not use adhesive bandages directly on the burn. \n4.If the burn is severe, call emergency services."]
+            },
+            {
+             "tag":"Poisoning instruction",
+             "patterns": ["what to do when a person gets Poisoning?","what are the instruction for Poisoning","procedure to do in the situation like Poisoning","tell me the first aid instruction for Poisoning"],
+             "responses":["\nPoisoning: \n1.Call the poison control center or emergency services immediately. \n2.Provide information about the substance ingested, inhaled, or contacted. \n3.Follow any specific instructions given by the poison control center or emergency services."]
+            },
+            {
+             "tag":"Fractures instruction",
+             "patterns": ["what to do when a person gets Fractures?","what are the instruction for Fractures","procedure to do in the situation like Fractures and broken bones","tell me the first aid instruction for Fractures and broken bones"],
+             "responses":["\nFractures and broken bones: \n1.Encourage the person to remain still and avoid moving the injured area. \n2.If necessary, stabilize the fracture by using a splint or immobilization techniques. \n3.Apply ice wrapped in a cloth to reduce pain and swelling. \n4.Seek medical help or transport the person to the nearest healthcare facility."]
+            },
+            {
+             "tag":"Heatstroke instruction",
+             "patterns": ["what to do when a person gets Heatstroke?","what are the instruction for Heatstroke","procedure to do in the situation like Heatstroke","tell me the first aid instruction for Heatstroke"],
+             "responses":["\nHeatstroke: \n1.Move the person to a shaded or cooler area. \n2.Remove excess clothing and apply cool water to their skin or use cool towels. \n3.Fan the person to promote evaporation and cooling. \n4.Offer them cool fluids to drink if they are conscious and able to swallow. \n5.Call emergency services immediately."]
+            },
+            {
+             "tag":"Drowning instruction",
+             "patterns": ["what to do when a person gets Drown?","what are the instruction for Drowning","procedure to do in the situation like Drowning","tell me the first aid instruction for Drowning"],
+             "responses":["\nDrowning: \n1.If the person is still in the water, ensure your safety first before attempting a rescue. \n2.Remove the person from the water while supporting their head and neck. \n3.Check if they are breathing and have a pulse. \n4.Begin CPR if necessary, starting with chest compressions and rescue breaths. \n5.Call emergency services."]
+            },
+            {
+             "tag":"Drug overdose instruction",
+             "patterns": ["what to do when a person gets Drug overdose?","what are the instruction for Drug overdose","procedure to do in the situation like Drug overdose","tell me the first aid instruction for Drug overdose"],
+             "responses":["\nDrug overdose: \n1.Call emergency services immediately. \n2.If the person is unconscious but breathing, place them in the recovery position. \n3.Do not induce vomiting unless instructed by medical professionals. \n4.Provide information about the substances taken, if known."]
+            },
+            {
+             "tag":"Electric shock instruction",
+             "patterns": ["what to do when a person gets Electric shock?","what are the instruction for Electric shock","procedure to do in the situation like Electric shock","tell me the first aid instruction for Electric shock"],
+             "responses":["\nElectric shock: \n1.Ensure your own safety before attempting to help the person. \n2.Disconnect the power source if possible or move the person away from the source using a non-conductive object. \n3.Check if the person is responsive and breathing. \n4.If necessary, begin CPR. \n5.Call emergency services."]
+            },
+            {
+             "tag":"Asthma attack instruction",
+             "patterns": ["what to do when a person gets Asthma attack?","what are the instruction for Asthma attack","procedure to do in the situation like Asthma attack","tell me the first aid instruction for Asthma attack"],
+             "responses":["\nAsthma attack: \n1.Help the person sit upright and assist them in using their prescribed inhaler. \n2.Encourage slow and deep breaths. \n3.If the person's symptoms worsen or they do not have an inhaler, call emergency services."]
+            },
+            {
+             "tag":"CPR instruction",
+             "patterns": ["How to do CPR?","what are the instruction for CPR","CPR steps?","what is Cardiopulmonary Resuscitation"],
+             "responses":["\nThe steps to perform CPR: \n1.Check for responsiveness: Shake the person gently and ask loudly, 'Are you okay?' If there is no response, the person is unresponsive, and you need to initiate CPR. \n2.Call for help: Shout for someone nearby to call emergency services or do it yourself if you are alone. If an automated external defibrillator (AED) is available, send someone to retrieve it. \n3.Positioning: Place the person on a firm, flat surface. Ensure they are lying on their back and are not on any hazardous or uneven surfaces. \n4.Hand placement: Kneel beside the person's chest. Place the heel of one hand on the center of the person's chest, between the nipples. Place your other hand on top, interlocking your fingers. Keep your arms straight and your shoulders directly above your hands. \n5.Compression technique: Start chest compressions by pushing hard and fast at a rate of 100-120 compressions per minute. Allow the chest to fully recoil between compressions. Aim for a compression depth of about 2 inches (5 centimeters) for adults. \n6.Rescue breaths: After 30 compressions, open the person's airway by tilting their head back and lifting the chin. Pinch the person's nose closed and cover their mouth with yours, creating an airtight seal. Give two rescue breaths lasting about 1 second each. Watch for the person's chest to rise with each breath. \n7.Repeat cycles: Continue the cycle of 30 compressions followed by 2 rescue breaths. Maintain the compression-to-breath ratio of 30:2 until help arrives, an AED becomes available, the person shows signs of life, or you are too exhausted to continue. \n8.Use of an AED: If an AED arrives, turn it on and follow the voice prompts. Apply the pads to the person's bare chest as indicated and allow the AED to analyze the heart rhythm. If advised, deliver a shock by pressing the appropriate button. After delivering the shock, resume CPR starting with chest compressions. \n9.Continue until help arrives: Keep performing CPR until emergency medical services arrive and take over, or the person shows signs of life, such as breathing, coughing, or moving."]
+            },
+            {
+             "tag":"Cognitive Behavioral Therapy",
+             "patterns": ["what is Cognitive Behavioral Therapy?","tell me about Cognitive Behavioral Therapy","what are Cognitive Behavioral Therapy","what is CBT"],
+             "responses":["\nCognitive Behavioral Therapy (CBT): A type of talk therapy that helps individuals identify and change negative patterns of thinking and behavior that are causing distress."]
+            },
+            {
+             "tag":"Dialectical Behavioral Therapy",
+             "patterns": ["what is Dialectical Behavioral Therapy?","tell me about Dialectical Behavioral Therapy","what are Dialectical Behavioral Therapy","what is DBT"],
+             "responses":["\nDialectical Behavioral Therapy (DBT): A type of talk therapy that helps individuals regulate emotions, tolerate distress, and improve relationships."]
+            },
+            {
+             "tag":"Psychoanalytic Therapy",
+             "patterns": ["what is Psychoanalytic Therapy?","tell me about Psychoanalytic Therapy","what are Psychoanalytic Therapy"],
+             "responses":["\nPsychoanalytic Therapy: A type of talk therapy that involves exploring unconscious thoughts, emotions, and experiences that may be causing distress in the present."]
+            },
+            {
+             "tag":"Family Therapy",
+             "patterns": ["what is Family Therapy?","tell me about Family Therapy","what are Family Therapy"],
+             "responses":["\nFamily Therapy: A type of talk therapy that involves working with families to improve communication, resolve conflicts, and strengthen relationships."]
+            },
+            {
+             "tag":"Group Therapy",
+             "patterns": ["what is Group Therapy?","tell me about Group Therapy","what are Group Therapy"],
+             "responses":["\nGroup Therapy: A type of therapy that involves working with a therapist and other individuals who share similar experiences or issues."]
+            },
+            {
+             "tag":"Art Therapy",
+             "patterns": ["what is Art Therapy?","tell me about Art Therapy","what are Art Therapy"],
+             "responses":["\nArt Therapy: A type of therapy that involves using creative expression, such as drawing, painting, or sculpting, to explore emotions and promote healing."]
+            },
+            {
+             "tag":"Occupational Therapy",
+             "patterns": ["what is Occupational Therapy?","tell me about Occupational Therapy","what are Occupational Therapy"],
+             "responses":["\nOccupational Therapy: A type of therapy that helps individuals develop or regain the skills needed to perform daily tasks, such as dressing, cooking, and working."]
+            },
+            {
+             "tag":"Physical Therapy",
+             "patterns": ["what is Physical Therapy?","tell me about Physical Therapy","what are Physical Therapy"],
+             "responses":["\nPhysical Therapy: A type of therapy that helps individuals improve physical function, reduce pain, and prevent disability."]
+            },
+            {
+             "tag":"Speech Therapy",
+             "patterns": ["what is Speech Therapy?","tell me about Speech Therapy","what are Speech Therapy"],
+             "responses":["\nSpeech Therapy: A type of therapy that helps individuals improve communication skills, such as speech, language, and voice."]
+            },
+            {
+             "tag":"Music Therapy",
+             "patterns": ["what is Music Therapy?","tell me about Music Therapy","what are Music Therapy"],
+             "responses":["\nMusic Therapy: A type of therapy that involves using music to promote healing and improve mental, physical, and emotional well-being."]
+            },
+            {
+             "tag":"Interpersonal Therapy",
+             "patterns": ["what is Interpersonal Therapy?","tell me about Interpersonal Therapy","what are Interpersonal Therapy","what is IPT"],
+             "responses":["\nInterpersonal Therapy (IPT): A type of talk therapy that focuses on improving communication and relationships with others to alleviate symptoms of mental illness, such as depression."]
+            },
+            {
+             "tag":"Play Therapy",
+             "patterns": ["what is Play Therapy?","tell me about Play Therapy","what are Play Therapy"],
+             "responses":["\nPlay Therapy: A type of therapy that involves using play to help children express and work through emotions, improve social skills, and develop problem-solving abilities."]
+            },
+            {
+             "tag":"Hypnotherapy",
+             "patterns": ["what is Hypnotherapy?","tell me about Hypnotherapy","what are Hypnotherapy"],
+             "responses":["\nHypnotherapy: A type of therapy that involves inducing a hypnotic state in individuals to help them achieve a state of relaxation, focus, and suggestibility for therapeutic purposes."]
+            },
+            {
+             "tag":"EMDR Therapy",
+             "patterns": ["what is Eye Movement Desensitization and Reprocessing?","tell me about Eye Movement Desensitization and Reprocessing","what are Eye Movement Desensitization and Reprocessing","what is EMDR"],
+             "responses":["\nEye Movement Desensitization and Reprocessing (EMDR): A type of therapy that helps individuals process traumatic memories and overcome emotional distress through guided eye movements."]
+            },
+            {
+             "tag":"MBSR Therapy",
+             "patterns": ["what is Mindfulness-Based Stress Reduction?","tell me about Mindfulness-Based Stress Reduction","what are Mindfulness-Based Stress Reduction","what is MBSR"],
+             "responses":["\nMindfulness-Based Stress Reduction (MBSR): A type of therapy that helps individuals reduce stress and improve overall well-being through the practice of mindfulness meditation."]
+            },
+            {
+             "tag":"Narrative Therapy",
+             "patterns": ["what is Narrative Therapy?","tell me about Narrative Therapy","what are Narrative Therapy"],
+             "responses":["\nNarrative Therapy: A type of talk therapy that involves helping individuals reframe negative life experiences into positive narratives to promote healing and growth."]
+            },
+            {
+             "tag":"Solution-Focused Brief Therapy",
+             "patterns": ["what is Solution-Focused Brief Therapy?","tell me about Solution-Focused Brief Therapy","what are Solution-Focused Brief Therapy","what is SFBT"],
+             "responses":["\nSolution-Focused Brief Therapy (SFBT): A type of talk therapy that focuses on identifying and achieving specific goals in a short period of time, typically between 5 to 20 sessions."]
+            },
+            {
+             "tag":"Equine-Assisted Therapy",
+             "patterns": ["what is Equine-Assisted Therapy?","tell me about Equine-Assisted Therapy","what are Equine-Assisted Therapy"],
+             "responses":["\nEquine-Assisted Therapy: A type of therapy that involves working with horses to promote emotional and physical healing, improve self-esteem, and develop social skills."]
+            },
+            {
+             "tag":"Wilderness Therapy",
+             "patterns": ["what is Wilderness Therapy?","tell me about Wilderness Therapy","what are Wilderness Therapy"],
+             "responses":["\nWilderness Therapy: A type of therapy that involves outdoor activities, such as camping and hiking, to promote personal growth, self-reflection, and resilience."]
+            },
+            {
+             "tag":"Acetaminophen Medicine",
+             "patterns": ["what is Acetaminophen?","tell me about Acetaminophen","what areAcetaminophen","what is paracetamol"],
+             "responses":["\nAcetaminophen (paracetamol): Acetaminophen is a common over-the-counter pain reliever and fever reducer. It is used to alleviate mild to moderate pain and reduce fever. It works by inhibiting the production of certain chemicals in the body that cause pain and fever."]
+            },
+            {
+             "tag":"Ibuprofen Medicine",
+             "patterns": ["what is Ibuprofen?","tell me about Ibuprofen","what are Ibuprofen"],
+             "responses":["\nIbuprofen: Ibuprofen is a nonsteroidal anti-inflammatory drug (NSAID) used for pain relief, reducing inflammation, and lowering fever. It works by inhibiting the production of prostaglandins, which are substances that contribute to pain and inflammation in the body."]
+            },
+            {
+             "tag":"Amoxicillin Medicine",
+             "patterns": ["what is Amoxicillin?","tell me about Amoxicillin","what are Amoxicillin"],
+             "responses":["\nAmoxicillin: Amoxicillin is an antibiotic commonly prescribed to treat bacterial infections, such as respiratory tract infections, urinary tract infections, and skin infections. It belongs to the penicillin group of antibiotics and works by inhibiting the growth of bacteria."]
+            },
+            {
+             "tag":"Simvastatin Medicine",
+             "patterns": ["what is Simvastatin?","tell me about Simvastatin","what are Simvastatin"],
+             "responses":["\nSimvastatin: Simvastatin is a medication used to lower cholesterol levels in the blood. It belongs to a class of drugs called statins, which work by inhibiting an enzyme involved in cholesterol production in the liver. By lowering cholesterol levels, it helps reduce the risk of heart disease and stroke."]
+            },
+            {
+             "tag":"Omeprazole Medicine",
+             "patterns": ["what is Omeprazole?","tell me about Omeprazole","what are Omeprazole","what is proton pump inhibitor","what is PPI"],
+             "responses":["\nOmeprazole: Omeprazole is a proton pump inhibitor (PPI) used to reduce stomach acid production. It is commonly prescribed to treat conditions such as gastroesophageal reflux disease (GERD), stomach ulcers, and conditions involving excessive stomach acid. By reducing stomach acid, it helps relieve symptoms and promotes healing."]
+            },
+            {
+             "tag":"Fluoxetine Medicine",
+             "patterns": ["what is Fluoxetine?","tell me about Fluoxetine","what are Fluoxetine","what is antidepressant"],
+             "responses":["\nFluoxetine: Fluoxetine is an antidepressant medication belonging to the selective serotonin reuptake inhibitor (SSRI) class. It is used to treat various mental health conditions, including depression, anxiety disorders, and obsessive-compulsive disorder (OCD). It works by increasing the availability of serotonin, a neurotransmitter involved in mood regulation, in the brain."]
+            },
+            {
+             "tag":"Metformin Medicine",
+             "patterns": ["what is Metformin?","tell me about Metformin","what are Metformin"],
+             "responses":["\nMetformin: Metformin is an oral medication commonly prescribed for the management of type 2 diabetes. It helps lower blood sugar levels by reducing glucose production in the liver and increasing the body's sensitivity to insulin. It may also be used in the treatment of polycystic ovary syndrome (PCOS)."]
+            },
+            {
+             "tag":"Salbutamol Medicine",
+             "patterns": ["what is Salbutamol?","tell me about Salbutamol","what are Salbutamol","what is albuterol"],
+             "responses":["\nSalbutamol (albuterol): Salbutamol is a bronchodilator medication used to relieve symptoms of asthma and other respiratory conditions. It works by relaxing the muscles in the airways, thereby widening the air passages and making it easier to breathe."]
+            },
+            {
+             "tag":"Lisinopril Medicine",
+             "patterns": ["what is Lisinopril?","tell me about Lisinopril","what are Lisinopril"],
+             "responses":["\nLisinopril: Lisinopril is an angiotensin-converting enzyme (ACE) inhibitor used to treat high blood pressure (hypertension) and heart failure. It works by relaxing blood vessels, reducing blood pressure, and improving the heart's efficiency."]
+            },
+            {
+             "tag":"Atorvastatin Medicine",
+             "patterns": ["what is Atorvastatin?","tell me about Atorvastatin","what are Atorvastatin"],
+             "responses":["\nAtorvastatin: Atorvastatin is a statin medication used to lower cholesterol levels and reduce the risk of cardiovascular diseases. It works by inhibiting an enzyme involved in cholesterol production in the liver, thus lowering LDL (bad) cholesterol and triglyceride levels while increasing HDL (good) cholesterol levels."]
+            },
+            {
+             "tag":"Prednisone Medicine",
+             "patterns": ["what is Prednisone?","tell me about Prednisone","what are Prednisone"],
+             "responses":["\nPrednisone: Prednisone is a corticosteroid medication used to treat a variety of inflammatory conditions, including allergies, asthma, arthritis, and certain skin disorders. It works by suppressing the immune response and reducing inflammation in the body."]
+            },
+            {
+             "tag":"Metoprolol Medicine",
+             "patterns": ["what is Metoprolol?","tell me about Metoprolol","what are Metoprolol"],
+             "responses":["\nMetoprolol: Metoprolol is a beta-blocker medication used to treat high blood pressure, angina (chest pain), and certain heart rhythm disorders. It works by blocking the effects of adrenaline, reducing heart rate and blood pressure, and improving blood flow."]
+            },
+            {
+             "tag":"Pantoprazole Medicine",
+             "patterns": ["what is Pantoprazole?","tell me about Pantoprazole","what are Pantoprazole"],
+             "responses":["\nPantoprazole: Pantoprazole is a proton pump inhibitor (PPI) used to reduce stomach acid production. It is prescribed for conditions such as gastroesophageal reflux disease (GERD), stomach ulcers, and certain conditions involving excessive stomach acid. By decreasing stomach acid, it helps relieve symptoms and promotes healing."]
+            },
+            {
+             "tag":"Warfarin Medicine",
+             "patterns": ["what is Warfarin?","tell me about Warfarin","what are Warfarin"],
+             "responses":["\nWarfarin: Warfarin is an anticoagulant medication (blood thinner) used to prevent blood clots. It is prescribed for conditions such as atrial fibrillation, deep vein thrombosis (DVT), and pulmonary embolism. Warfarin works by interfering with the body's blood clotting mechanism."]
+            },
+            {
+             "tag":"Sertraline Medicine",
+             "patterns": ["what is Sertraline?","tell me about Sertraline","what are Sertraline"],
+             "responses":["\nSertraline: Sertraline is an antidepressant medication belonging to the selective serotonin reuptake inhibitor (SSRI) class. It is used to treat depression, anxiety disorders, panic disorder, and other mental health conditions. Sertraline works by increasing the availability of serotonin in the brain, helping to regulate mood."]
+            },
+            {
+             "tag":"Insulin Medicine",
+             "patterns": ["what is Insulin?","tell me about Insulin","what are Insulin"],
+             "responses":["\nInsulin: Insulin is a hormone used in the management of diabetes. It helps regulate blood sugar levels by facilitating the uptake of glucose from the bloodstream into cells. Different formulations of insulin are available, including rapid-acting, short-acting, intermediate-acting, and long-acting, to match individual needs."]
+            },
+            {
+             "tag":"Aspirin Medicine",
+             "patterns": ["what is Aspirin?","tell me about Aspirin","what are Aspirin"],
+             "responses":["\nAspirin: Aspirin is a nonsteroidal anti-inflammatory drug (NSAID) used for pain relief, reducing inflammation, and lowering fever. It is commonly used to alleviate mild to moderate pain, such as headaches, toothaches, and menstrual cramps."]
+            },
+            {
+             "tag":"Diphenhydramine Medicine",
+             "patterns": ["what is Diphenhydramine?","tell me about Diphenhydramine","what are Diphenhydramine"],
+             "responses":["\nDiphenhydramine: Diphenhydramine is an antihistamine that is commonly used for allergy relief and as a sleep aid. It helps relieve symptoms of allergies, such as sneezing, itching, and runny nose. It can also induce drowsiness, making it useful for temporary relief of occasional sleeplessness."]
+            },
+            {
+             "tag":"Pseudoephedrine Medicine",
+             "patterns": ["what is Pseudoephedrine?","tell me about Pseudoephedrine","what are Pseudoephedrine"],
+             "responses":["\nPseudoephedrine: Pseudoephedrine is a decongestant used to relieve nasal congestion caused by colds, allergies, or sinus infections. It works by shrinking blood vessels in the nasal passages, allowing for easier breathing."]
+            },
+            {
+             "tag":"Loperamide Medicine",
+             "patterns": ["what is Loperamide?","tell me about Loperamide","what are Loperamide"],
+             "responses":["\nLoperamide: Loperamide is an antidiarrheal medication used to treat acute diarrhea or diarrhea associated with irritable bowel syndrome. It helps reduce the frequency of bowel movements and relieves symptoms of diarrhea."]
+            },
+            {
+             "tag":"Antacids Medicine",
+             "patterns": ["what is Antacids?","tell me about Antacids","what are Antacids","what is calcium carbonate","what is aluminum hydroxide"],
+             "responses":["\nAntacids (e.g., calcium carbonate, aluminum hydroxide): Antacids are medications used to relieve heartburn, acid indigestion, and upset stomach. They work by neutralizing excess stomach acid, providing temporary relief from symptoms of acid reflux and gastrointestinal discomfort."]
+            },
+            {
+             "tag":"Hydrocortisone cream Medicine",
+             "patterns": ["what is Hydrocortisone cream?","tell me about Hydrocortisone cream","what are Hydrocortisone cream"],
+             "responses":["\nHydrocortisone cream: Hydrocortisone cream is a topical corticosteroid used to relieve itching, inflammation, and skin irritations, such as insect bites, rashes, and eczema. It works by reducing inflammation and suppressing the immune response in the affected area."]
+            },
+            {
+             "tag":"Antihistamines Medicine",
+             "patterns": ["what is Antihistamines?","tell me about Antihistamines","what are Antihistamines","what is loratadine","what is cetirizine"],
+             "responses":["\nAntihistamines (e.g., loratadine, cetirizine): Antihistamines are medications used to relieve allergy symptoms, such as sneezing, itching, runny nose, and watery eyes. They work by blocking the effects of histamine, a substance released during allergic reactions."]
+            },
+            {
+             "tag":"Cough Suppressants Medicine",
+             "patterns": ["what is Cough Suppressants?","tell me about Cough Suppressants","what are Cough Suppressants","what is dextromethorphan"],
+             "responses":["\nCough Suppressants (e.g., dextromethorphan): Cough suppressants are medications used to alleviate coughing. They work by acting on the cough reflex in the brain, reducing the urge to cough. They are commonly used for dry, non-productive coughs."]
+            },
+            {
+             "tag":"Expectorants Medicine",
+             "patterns": ["what is Expectorants?","tell me about Expectorants","what are Expectorants","what is guaifenesin"],
+             "responses":["\nExpectorants (e.g., guaifenesin): Expectorants are medications used to thin and loosen mucus in the airways, making it easier to cough up. They are commonly used for productive coughs to help clear respiratory congestion."]
+            },
+            {
+             "tag":"Topical Analgesic Medicine",
+             "patterns": ["what is Topical Analgesic?","tell me about Topical Analgesic","what are Topical Analgesic","what is menthol","what is camphor"],
+             "responses":["\nTopical Analgesic (e.g., menthol, camphor): Topical analgesics are creams, gels, or ointments applied to the skin to relieve pain, such as muscle aches, strains, and arthritis. They work by producing a cooling or warming sensation that helps distract from pain and provide localized relief."]
+            },
+            {
+             "tag":"Antifungal Cream Medicine",
+             "patterns": ["what is Antifungal Cream?","tell me about Antifungal Cream","what are Antifungal Cream","what is clotrimazole","what is miconazole"],
+             "responses":["\nAntifungal Cream (e.g., clotrimazole, miconazole): Antifungal creams are used to treat fungal infections of the skin, including athlete's foot, jock itch, and ringworm. They work by inhibiting the growth of fungi and relieving symptoms such as itching, redness, and inflammation."]
+            },
+            {
+             "tag":"Oral Rehydration Medicine",
+             "patterns": ["what is Oral Rehydration Solutions?","tell me about Oral Rehydration Solutions","what are Oral Rehydration Solutions","what is electrolyte solutions"],
+             "responses":["\nOral Rehydration Solutions (e.g., electrolyte solutions): Oral rehydration solutions are used to prevent or treat dehydration caused by conditions like diarrhea, vomiting, or excessive sweating. They contain a balanced mixture of electrolytes and glucose to help restore fluid and electrolyte balance in the body."]
+            },
+            {
+             "tag":"Nasal Sprays Medicine",
+             "patterns": ["what is Nasal Sprays?","tell me about Nasal Sprays","what are Nasal Sprays","what is saline nasal sprays"],
+             "responses":["\nNasal Sprays (e.g., saline nasal sprays): Nasal sprays are used to relieve nasal congestion and moisturize the nasal passages. Saline nasal sprays contain a solution of salt and water, which helps to thin mucus and flush out irritants from the nasal passages."]
+            },
+            {
+             "tag":"Best Chennai hospitals",
+             "patterns": ["what are the best hospitals in Chennai?","list out the top hospitals in Chennai","show me the list of hospitals in Chennai"],
+             "responses":["\nHere is a list of top 10 renowned hospitals in Chennai: \n1.Apollo Hospitals, Greams Road: \n    Address: 21, Greams Lane, Off Greams Road, Chennai \n    Contact: +91-44-2829-0200 \n2.Fortis Malar Hospital, Adyar: \n    Address: 52, 1st Main Road, Gandhi Nagar, Adyar, Chennai \n    Contact: +91-44-4289-2222 \n3.MIOT International Hospital, Manapakkam: \n    Address: 4/112, Mount Poonamallee Road, Manapakkam, Chennai \n    Contact: +91-44-4200-2288 \n4.Sri Ramachandra Medical Centre, Porur: \n    Address: No. 1, Ramachandra Nagar, Porur, Chennai \n    Contact: +91-44-2476-8403 \n5.Apollo Specialty Hospital, Vanagaram: \n    Address: Ayanambakkam, Vanagaram to Ambattur Main Road, Vanagaram, Chennai \n    Contact: +91-44-2653-0000 \n6.Kauvery Hospital, Alwarpet: \n    Address: No. 81, TTK Road, Alwarpet, Chennai \n    Contact: +91-44-4000-6000 \n7.Billroth Hospitals, Shenoy Nagar: \n    Address: 43, Lakshmi Talkies Road, Shenoy Nagar, Chennai \n    Contact: +91-44-2664-1177 \n8.Madras Medical Mission, Mogappair: \n    Address: No. 4-A, Dr. J. J. Nagar, Mogappair, Chennai \n    Contact: +91-44-2656-0400 \n9.Global Hospitals, Perumbakkam: \n    Address: 439, Cheran Nagar, Perumbakkam, Chennai \n    Contact: +91-44-2277-7000 \n10.SIMS Hospital, Vadapalani: \n    Address: No. 1, Jawaharlal Nehru Salai, Vadapalani, Chennai \n    Contact: +91-44-4396-9999"]
+            },
+            {
+             "tag":"Porur hospitals",
+             "patterns": ["what are the best hospitals in Porur?","list out the hospitals in Porur","show me the list of hospitals in Porur","nearby hospitals in Porur"],
+             "responses":["\nPorur: \n1.Sri Ramachandra Medical Centre: \n    Address: No. 1, Ramachandra Nagar, Porur, Chennai \n    Contact: +91-44-2476-8403 \n2.ACS Medical College and Hospital: \n    Address: Velappanchavadi, Porur, Chennai \n    Contact: +91-44-2476-7028 \n3.Vignesh Hospital: \n    Address: No. 47, Kundrathur Main Road, Porur, Chennai \n    Contact: +91-44-2476-2500 \n4.St. Thomas Hospital: \n    Address: No. 5, Behind Porur Panchayat Office, Mount Poonamallee Road, Porur, Chennai \n    Contact: +91-44-2476-3380 \n5.Gokulam Child Development and Rehab Centre: \n    Address: No. 1, Mangala Nagar, Porur, Chennai \n    Contact: +91-98407-97706 \n6.Lakshmi Hospital: \n    Address: No. 18, Kundrathur Main Road, Porur, Chennai \n    Contact: +91-44-2476-1123 \n7.Dr. Agarwal's Eye Hospital: \n    Address: No. 222, Trunk Road, Porur, Chennai \n    Contact: +91-44-2432-2626 \n8.Venkateswara Homoeopathic Clinic and Hospital: \n    Address: No. 25/3, Kundrathur Main Road, Porur, Chennai \n    Contact: +91-44-4282-6446"]
+            },
+            {
+             "tag":"Vadapalani hospitals",
+             "patterns": ["what are the best hospitals in Vadapalani?","list out the top hospitals in Vadapalani","show me the list of hospitals in Vadapalani","nearby hospitals in Vadapalani"],
+             "responses":["\nVadapalani: \n1.SIMS Hospital (SRM Institutes for Medical Science): \n    Address: No. 1, Jawaharlal Nehru Salai, Vadapalani, Chennai \n    Contact: +91-44-4396-9999 \n2.Billroth Hospitals: \n    Address: No. 43, 2nd Main Road, Raja Annamalai Puram, Chennai \n    Contact: +91-44-2464-2727 \n3.Vijaya Hospital: \n    Address: No. 180, NSK Salai, Vadapalani, Chennai \n    Contact: +91-44-6664-6600 \n4.Vasan Eye Care Hospital: \n    Address: No. 100, Arcot Road, Vadapalani, Chennai \n    Contact: +91-44-4340-0400 \n5.Dr. Agarwal's Eye Hospital: \n    Address: No. 15, Rangarajapuram Main Road, Vadapalani, Chennai \n    Contact: +91-44-2499-3893 \n6.Sooriya Hospital: \n    Address: No. 1, Arunachalam Road, Saligramam, Chennai \n    Contact: +91-44-2376-1281"]
+            },
+            {
+             "tag":"Adyar hospitals",
+             "patterns": ["what are the best hospitals in Adyar?","list out the top hospitals in Adyar","show me the list of hospitals in Adyar","nearby hospitals in Adyar"],
+             "responses":["\nAdyar: \n1.Fortis Malar Hospital: \n    Address: 52, 1st Main Road, Gandhi Nagar, Adyar, Chennai \n    Contact: +91-44-4289-2222 \n2.Apollo Specialty Hospital: \n    Address: No. 320, Anna Salai, Teynampet, Chennai \n    Contact: +91-44-2433-4455 \n3.Kauvery Hospital: \n    Address: No. 81, TTK Road, Alwarpet, Chennai \n    Contact: +91-44-4000-6000 \n4.Prashanth Super Speciality Hospital: \n    Address: No. 36, 1st Main Road, Gandhi Nagar, Adyar, Chennai \n    Contact: +91-44-2491-7272 \n5.Dr. Mehta's Hospitals: \n    Address: No. 2, McNichols Road, 3rd Lane, Chetpet, Chennai \n    Contact: +91-44-4227-1001 \n6.Fortis Malar Hospital - Institute of Nephrology: \n    Address: 52, 1st Main Road, Gandhi Nagar, Adyar, Chennai \n    Contact: +91-44-4289-2222"]
+            },
+            {
+             "tag":"Kilpauk hospitals",
+             "patterns": ["what are the best hospitals in Kilpauk?","list out the top hospitals in Kilpauk","show me the list of hospitals in Kilpauk","nearby hospitals in Kilpauk"],
+             "responses":["\nKilpauk: \n1.Kauvery Hospital: \n    Address: No. 100, Poonamallee High Road, Kilpauk, Chennai \n    Contact: +91-44-4000-6000 \n2.Be Well Hospitals: \n    Address: No. 5A, Vijayaraghava Road, Kilpauk, Chennai \n    Contact: +91-44-4552-2552 \n3.Sri Kumaran Hospital: \n    Address: No. 2, New Avadi Road, Kilpauk, Chennai \n    Contact: +91-44-2644-1717 \n4.Apollo First Med Hospitals: \n    Address: No. 154, Poonamallee High Road, Kilpauk, Chennai \n    Contact: +91-44-2821-2000 \n5.Be Well Multispeciality Hospital: \n    Address: No. 5A, Vijayaraghava Road, Kilpauk, Chennai \n    Contact: +91-44-4552-2552 \n6.Dr. Sankar's Hospitals: \n    Address: No. 283/1, Poonamallee High Road, Kilpauk, Chennai \n    Contact: +91-44-2641-2510"]
+            },
+            {
+             "tag":"Manapakkam hospitals",
+             "patterns": ["what are the best hospitals in Manapakkam?","list out the top hospitals in Manapakkam","show me the list of hospitals in Manapakkam","nearby hospitals in Manapakkam"],
+             "responses":["\nManapakkam: \n1.MIOT International Hospital: \n    Address: 4/112, Mount Poonamallee Road, Manapakkam, Chennai \n    Contact: +91-44-4200-2288 \n2.Dr. Kumaresan Hospital: \n    Address: Plot No. 12, Kundrathur Main Road, Manapakkam, Chennai \n    Contact: +91-44-2252-3183 \n3.Manapakkam Hospital: \n    Address: No. 2, 7th Street, Kamaraj Nagar, Manapakkam, Chennai \n    Contact: +91-44-2252-1678 \n4.SRM Medical College Hospital and Research Centre: \n    Address: Bharathi Salai, Ramapuram, Chennai \n    Contact: +91-44-2249-2882"]
+            },
+            {
+             "tag":"Anna Nagar hospitals",
+             "patterns": ["what are the best hospitals in Anna Nagar?","list out the top hospitals in Anna Nagar","show me the list of hospitals in Anna Nagar","nearby hospitals in Anna Nagar"],
+             "responses":["\nAnna Nagar: \n1.Sundaram Medical Foundation: \n    Address: No. 9C, 3rd Avenue, Anna Nagar, Chennai \n    Contact: +91-44-2614-0092 \n2.Kauvery Hospital: \n    Address: No. 162, Plot No. 21, Valluvar Kottam High Road, Anna Salai, Chennai \n    Contact: +91-44-4000-6000 \n3.Dr. Agarwal's Eye HospitalDr. Agarwal's Eye Hospital: \n    Address: No. 1111, 13th Main Road, Anna Nagar, Chennai \n    Contact: +91-44-4343-4444 \n4.Sundaram Arulrhaj Hospitals: \n    Address: No. 7, 3rd Avenue, Anna Nagar East, Chennai \n    Contact: +91-44-2626-6342"]
+            },
+            {
+             "tag":"Mogappair hospitals",
+             "patterns": ["what are the best hospitals in Mogappair?","list out the top hospitals in Mogappair","show me the list of hospitals in Mogappair","nearby hospitals in Mogappair"],
+             "responses":["\nMogappair: \n1.Frontier Lifeline Hospital: \n    Address: R-30-C, Ambattur Industrial Estate Road, Mogappair, Chennai \n    Contact: +91-44-2653-3030 \n2.Madras Medical Mission Hospital: \n    Address: No. 4-A, Dr. J. J. Nagar, Mogappair, Chennai \n    Contact: +91-44-2656-0400 \n3.MMM Hospital: \n    Address: No. 15, First Cross Street, Nolambur, Mogappair, Chennai \n    Contact: +91-44-2656-0438 \n4.Apollo Speciality Hospital: \n    Address: No. 64, Vanagaram to Ambattur Main Road, Mogappair, Chennai \n    Contact: +91-44-2653-7777 \n5Dr. Agarwal's Eye Hospital: \n   Address: No. 18, Ground Floor, 8th Block, Mogappair West, Chennai \n    Contact: +91-44-4343-4444 \n6.Madras ENT Research Foundation: \n    Address: No. 1, 2nd Cross Street, Sri Iyappa Nagar, Mogappair West, Chennai \n    Contact: +91-44-2653-1071"]
+            },
+            {
+             "tag":"Ambattur hospitals",
+             "patterns": ["what are the best hospitals in Ambattur?","list out the top hospitals in Ambattur","show me the list of hospitals in Ambattur","nearby hospitals in Ambattur"],
+             "responses":["\nAmbattur: \n1.Ambattur Rotary Hospital: \n    Address: Plot No. 17, CTH Road, Ambattur, Chennai \n    Contact: +91-44-2658-0875 \n2.KVT Speciality Hospital: \n    Address: No. 15, Bharathi Nagar, Ambattur, Chennai \n    Contact: +91-44-4200-0515 \n3.Sri Balaji Hospital: \n    Address: No. 1, Govindan Street, Aarthi Nagar, Ambattur, Chennai \n    Contact: +91-44-2625-2148 \n4.Saveetha Medical College and Hospital: \n    Address: Saveetha Nagar, Thandalam, Chennai \n    Contact: +91-44-2680-1122"]
+            },
+            {
+             "tag":"Avadi hospitals",
+             "patterns": ["what are the best hospitals in Avadi?","list out the top hospitals in Avadi","show me the list of hospitals in Avadi","nearby hospitals in Avadi"],
+             "responses":["\nAvadi: \n1.Primary Health Centre, Avadi: \n    Address: Avadi, Chennai \n    Contact: +91-44-2638-6506 \n2.K.J. Hospital: \n    Address: No. 1, 1st Floor, Nehru Bazaar Road, Avadi, Chennai \n    Contact: +91-44-2637-4411 \n3.Government General Hospital, Avadi: \n    Address: Avadi, Chennai \n    Contact: +91-44-2637-4201 \n4.Sen Hospital: \n    Address: No. 9, CTH Road, Avadi, Chennai \n    Contact: +91-44-2655-3317 \n5.Ramachandra Hospital: \n    Address: No. 11, Nehru Bazaar Road, Avadi, Chennai \n    Contact: +91-44-2655-0989 \n6.Sri Perumal Clinic and Hospital: \n    Address: No. 140, Old Military Road, Avadi, Chennai \n    Contact: +91-44-2638-0331 \n7.Dr. Vasanth's Homeopathy Clinic: \n    Address: No. 51, Nehru Bazaar Road, Avadi, Chennai \n    Contact: +91-98402-05887"]
+            },
+            {
+             "tag":"Park Town hospitals",
+             "patterns": ["what are the best hospitals in Park Town?","list out the top hospitals in Park Town","show me the list of hospitals in Park Town","nearby hospitals in Park Town","nearby hospitals in Greams Road"],
+             "responses":["\nPark Town & Greams Road: \n1.Rajiv Gandhi Government General Hospital: \n    Address: Poonamallee High Road, Park Town, Chennai \n    Contact: +91-44-2530-5000 \n2.Apollo Hospitals, Greams Road: \n    Address: No. 21, Greams Lane, Off Greams Road, Thousand Lights, Chennai \n    Contact: +91-44-2829-0200"]
+            },
+            {
+             "tag":"Tambaram hospitals",
+             "patterns": ["what are the best hospitals in Tambaram?","list out the top hospitals in Tambaram","show me the list of hospitals in Tambaram","nearby hospitals in Tambaram"],
+             "responses":["\nTambaram: \n1.Hindu Mission Hospital: \n    Address: No. 103, GST Road, Tambaram West, Chennai \n    Contact: +91-44-2226-2700 \n2.Deepam Hospital: \n    Address: No. 327, Mudichur Road, West Tambaram, Chennai \n    Contact: +91-44-2226-1010 \n3.Dr. Kamakshi Memorial Hospital: \n    Address: No. 1, Radial Road, Pallikaranai, Chennai \n    Contact: +91-44-2246-2345 \n4.Sankara Eye Hospital: \n    Address: No. 5, Sripuram First Street, Tambaram East, Chennai \n    Contact: +91-44-2226-4233 \n5.Arokya Hospital: \n    Address: No. 51, Tambaram Main Road, Selaiyur, Chennai \n    Contact: +91-44-2229-5150 \n6.Tagore Medical College Hospital: \n    Address: Rathinamangalam, Melakkottaiyur, Chennai \n    Contact: +91-44-2747-5000"]
+            },
+            {
+             "tag":"Velachery hospitals",
+             "patterns": ["what are the best hospitals in Velachery?","list out the top hospitals in Velachery","show me the list of hospitals in Velachery","nearby hospitals in Velachery"],
+             "responses":["\nVelachery: \n1.Prashanth Super Speciality Hospital: \n    Address: No.77, Velachery Main Road, Velachery, Chennai \n    Contact: +91-44-3372-7777 \n2.Gleneagles Global Health City: \n    Address: No.439, Cheran Nagar, Perumbakkam, Chennai \n    Contact: +91-44-4477-7000 \n3.VeeCare Hospital: \n    Address: No.106, Jawaharlal Nehru Road, Tharamani, Chennai \n    Contact: +91-44-6675-6675 \n4.Phoenix Hospital: \n    Address: No. 61, 100 Feet Bypass Road, Velachery, Chennai \n    Contact: +91-44-6650-6650 \n5.Apollo Cradle: \n    Address: No. 14, Ganapathy Colony, 2nd Street, Velachery, Chennai \n    Contact: +91-44-3322-2222"]
+            },
+            {
+             "tag":"Blood Pressure range",
+             "patterns": ["how to know my Blood Pressure?","what are the stages of High Blood Pressure","list out the stages of Blood Pressure","check my Blood Pressure","check my BP"],
+             "responses":["\nBlood Pressure Ranges: \n1.Normal: A blood pressure reading below 120/80 mmHg is considered normal. This indicates that your blood pressure is within a healthy range, and there is no significant risk of hypertension. \n  Range: Systolic (top number) below 120 mmHg and diastolic (bottom number) below 80 mmHg \n2.Elevated: An elevated blood pressure reading falls between 120-129 systolic and less than 80 diastolic. This indicates that your blood pressure is higher than normal but not yet in the hypertension range. It is a signal to take preventive measures to maintain a healthy blood pressure level. \n  Range: Systolic between 120-129 mmHg and diastolic below 80 mmHg \n3.Hypertension Stage 1: This stage is characterized by a systolic blood pressure reading between 130-139 mmHg or a diastolic reading between 80-89 mmHg. It indicates mild to moderate high blood pressure and suggests the need for lifestyle modifications and, in some cases, medication. \n  Range: Systolic between 130-139 mmHg or diastolic between 80-89 mmHg \n4.Hypertension Stage 2: This stage occurs when the systolic blood pressure is 140 mmHg or higher, or the diastolic blood pressure is 90 mmHg or higher. It signifies more advanced and severe hypertension, requiring prompt medical attention and likely medication. \n  Range: Systolic at least 140 mmHg or diastolic at least 90 mmHg \n5.Hypertensive Crisis: A hypertensive crisis occurs when the blood pressure reaches a dangerously high level. A systolic blood pressure over 180 mmHg and/or a diastolic blood pressure over 120 mmHg indicate a hypertensive crisis. Immediate medical intervention is necessary to prevent complications. \n  Range: Systolic over 180 mmHg and/or diastolic over 120 mmHg"]
+            },
+            {
+             "tag":"Oxygen Saturation Level range",
+             "patterns": ["how to know my Oxygen Saturation Level?","what are the stages of Oxygen Saturation Level","list out the stages of Oxygen Saturation Level","check my Oxygen Saturation Level","check my SpO2 level","how to know my Oxygen level"],
+             "responses":["\nOxygen Saturation Level Ranges: \n1.Normal: A normal oxygen saturation level is typically considered to be 95% or above. It indicates that your blood is carrying an adequate amount of oxygen to meet the body's needs. \n  Range: Oxygen saturation (SpO2) level of 95% or above \n2.Mild Hypoxemia: Mild hypoxemia occurs when the oxygen saturation level falls between 91-94%. It suggests a slight decrease in oxygen levels and may be a sign of a mild respiratory or circulatory issue. It is essential to monitor and address the underlying cause. \n  Range: Oxygen saturation level between 91-94% \n3.Moderate Hypoxemia: Moderate hypoxemia is characterized by an oxygen saturation level between 86-90%. It indicates a more significant drop in oxygen levels and may result from conditions like pneumonia, asthma, or chronic obstructive pulmonary disease (COPD). Medical attention is necessary to ensure proper oxygenation. \n  Range: Oxygen saturation level between 86-90% \n4.Severe Hypoxemia: Severe hypoxemia occurs when the oxygen saturation level drops below 85%. It indicates a critical decrease in oxygen levels, which can be life-threatening. Immediate medical intervention is required to support oxygenation and address the underlying cause. \n  Range: Oxygen saturation level below 85%"]
+            },
+            {
+             "tag":"Blood Pressure Management precautions",
+             "patterns": ["what are the precautions for High Blood Pressure?","what are the preventions from High Blood Pressure","how to control High Blood Pressure","how to manage High Blood Pressure","how to control High BP","how to manage BP levels"],
+             "responses":["\nPrecautions for Blood Pressure Management: \n1.Maintain a healthy lifestyle by adopting a balanced diet rich in fruits, vegetables, whole grains, and lean proteins. \n2.Limit sodium intake and avoid processed and high-sodium foods. \n3.Engage in regular physical activity, such as brisk walking, swimming, or cycling, for at least 150 minutes per week. \n4.Manage stress through techniques like meditation, deep breathing exercises, or yoga. \n5.Limit alcohol consumption and quit smoking. \n6.Monitor blood pressure regularly and follow prescribed medications if advised by a healthcare professional."]
+            },
+            {
+             "tag":"Oxygen Level Management precautions",
+             "patterns": ["what are the precautions for Low Oxygen Level?","what are the preventions from Low Oxygen Level","how to control Low Oxygen Level","how to manage Low Oxygen Level","how to manage SpO2 levels"],
+             "responses":["\nPrecautions for Oxygen Level Management: \n1.If you have a medical condition that affects oxygen levels, follow the treatment plan prescribed by your healthcare provider. \n2.Maintain a well-ventilated environment with fresh air circulation. \n3.Avoid exposure to environmental pollutants and irritants. \n4.Quit smoking and avoid secondhand smoke. \n5.Manage any underlying respiratory conditions and follow prescribed medications. \n6.If you experience difficulty breathing or a significant drop in oxygen saturation, seek immediate medical attention."]
+            },
+            {
+             "tag":"fever explaination",
+             "patterns": ["what is Fever?","tell me about Fever","what cause Fever"],
+             "responses":["\nFever is an increase in body temperature above the normal range, usually indicating an underlying illness or infection."]
+            },
+            {
+             "tag":"common cold explaination",
+             "patterns": ["what is Common Cold?","tell me about Common Cold","what cause Common Cold"],
+             "responses":["\nThe common cold is a viral infection of the upper respiratory system."]
+            },
+            {
+             "tag":"high blood pressure explaination",
+             "patterns": ["what is high blood pressure?","tell me about high blood pressure","what is BP"],
+             "responses":["\nHigh blood pressure: Also known as hypertension, it is a condition where the force of blood against the artery walls is consistently too high, increasing the risk of heart disease and stroke."]
+            },
+            {
+             "tag":"diabetes explaination",
+             "patterns": ["what is diabetes?","tell me about diabetes","what is Type 2 Diabetes"],
+             "responses":["\nType 2 diabetes: A chronic condition characterized by high blood sugar levels due to the body's inability to properly use or produce insulin, resulting in insulin resistance."]
+            },
+            {
+             "tag":"high cholesterol explaination",
+             "patterns": ["what is High cholesterol?","tell me about High cholesterol","what is Cholesterol"],
+             "responses":["\nHigh cholesterol: A condition where there are high levels of cholesterol, a waxy substance, in the blood. It can lead to the formation of plaque in the arteries, increasing the risk of heart disease and stroke."]
+            },
+            {
+             "tag":"asthma explaination",
+             "patterns": ["what is Asthma?","tell me about Asthma","what cause breathing problems"],
+             "responses":["\nAsthma: A chronic respiratory condition characterized by inflammation and narrowing of the airways, leading to recurrent episodes of wheezing, coughing, chest tightness, and shortness of breath."]
+            },
+            {
+             "tag":"arthritis explaination",
+             "patterns": ["what is Arthritis?","tell me about Arthritis","what cause joint pain"],
+             "responses":["\nArthritis: A group of conditions causing joint inflammation and pain. The two most common types are osteoarthritis, which involves the degeneration of joint cartilage, and rheumatoid arthritis, an autoimmune disease affecting the joints."]
+            },
+            {
+             "tag":"osteoporosis explaination",
+             "patterns": ["what is Osteoporosis?","tell me about Osteoporosis","what cause bone weakness"],
+             "responses":["\nOsteoporosis: A condition characterized by weak and brittle bones, often resulting from the loss of bone density, making individuals more prone to fractures."]
+            },
+            {
+             "tag":"depression explaination",
+             "patterns": ["what is Depression?","tell me about Depression","what cause mental illness"],
+             "responses":["\nDepression: A mental health disorder causing persistent feelings of sadness, loss of interest or pleasure, and a range of physical and emotional symptoms that can significantly affect daily life."]
+            },
+            {
+             "tag":"migraines explaination",
+             "patterns": ["what is Migraines?","tell me about Migraines","what cause head ache"],
+             "responses":["\nMigraines: Recurrent and severe headaches often accompanied by other symptoms like nausea, sensitivity to light and sound, and visual disturbances."]
+            },
+            {
+             "tag":"gastroesophageal reflux disease explaination",
+             "patterns": ["what is Gastroesophageal reflux disease?","tell me about Gastroesophageal reflux disease","what cause gas problems","what is GERD"],
+             "responses":["\nGastroesophageal reflux disease (GERD): A chronic digestive disorder where stomach acid flows back into the esophagus, causing symptoms like heartburn, regurgitation, and discomfort."]
+            },
+            {
+             "tag":"urinary tract infection explaination",
+             "patterns": ["what is Urinary tract infection?","tell me about Urinary tract infection","what cause urinal infection","what is UTI"],
+             "responses":["\nUrinary tract infection (UTI): An infection that can occur in any part of the urinary system, such as the kidneys, bladder, ureters, or urethra, commonly characterized by symptoms like frequent urination, burning sensation, and cloudy urine."]
+            },
+            {
+             "tag":"chronic obstructive pulmonary disease explaination",
+             "patterns": ["what is Chronic obstructive pulmonary disease?","tell me about Chronic obstructive pulmonary disease","what is COPD"],
+             "responses":["\nChronic obstructive pulmonary disease (COPD): A progressive lung disease that causes airflow limitation, making it difficult to breathe. It includes conditions such as chronic bronchitis and emphysema."]
+            },
+            {
+             "tag":"heart disease explaination",
+             "patterns": ["what is Heart disease?","tell me about Heart disease","what affects the heart"],
+             "responses":["\nHeart disease: A broad term encompassing various conditions that affect the heart, including coronary artery disease, heart failure, arrhythmias, and valvular heart diseases."]
+            },
+            {
+             "tag":"allergies explaination",
+             "patterns": ["what is Allergies?","tell me about Allergies","what cause itching"],
+             "responses":["\nAllergies: The body's immune system overreacts to substances (allergens) that are typically harmless, leading to symptoms such as sneezing, itching, watery eyes, and respiratory problems."]
+            },
+            {
+             "tag":"insomnia explaination",
+             "patterns": ["what is Insomnia?","tell me about Insomnia","what cause sleeping problems"],
+             "responses":["\nInsomnia: A sleep disorder characterized by difficulty falling asleep, staying asleep, or experiencing non-restorative sleep, leading to daytime fatigue and impaired functioning."]
+            },
+            {
+             "tag":"gout explaination",
+             "patterns": ["what is Gout?","tell me about Gout","what cause Gout"],
+             "responses":["\nGout: A type of arthritis caused by the accumulation of uric acid crystals in the joints, resulting in sudden and severe joint pain, swelling, and inflammation."]
+            },
+            {
+             "tag":"common cold symptoms",
+             "patterns": ["Runny or stuffy nose",
+             "Sore throat",
+             "Cough",
+             "Congestion",
+             "Slight body aches or a mild headache",
+             "Sneezing",
+             "Low-grade fever",
+             "Generally feeling unwell (malaise)"],
+             "responses":["It seems that you are suffering from common cold"]
+            },
+            {
+             "tag":"fever symptoms",
+             "patterns":["Elevated body temperature (above 100.4°F or 38°C)",
+             "Sweating",
+             "Chills and shivering",
+             "Headache",
+             "Muscle aches",
+             "Loss of appetite",
+             "Irritability",
+             "Dehydration",
+             "General weakness"],
+             "responses":["It seems that you are suffering from fever"]
+            },
+            {
+             "tag":"High blood pressure symptoms",
+             "patterns":["Headaches",
+             "Dizziness",
+             "Blurred vision",
+             "Shortness of breath",
+             "Chest pain",
+             "Fatigue"],
+             "responses":["It seems that you are suffering from High blood pressure"]
+            },
+            {
+             "tag":"Diabetes symptoms",
+             "patterns":["increased hunger",
+             "increased thirst",
+             "weight loss",
+             "frequent urination",
+             "blurry vision",
+             "extreme fatigue"],
+             "responses":["It seems that you are suffering from Diabetes"]
+            },
+            {
+             "tag":"High cholesterol symptoms",
+             "patterns":["No specific symptoms (often silent)",
+             "Chest pain or angina (if cholesterol leads to blocked arteries)",
+             "Yellowish deposits around the eyes (in rare cases)"],
+             "responses":["It seems that you are suffering from High cholesterol"]
+            },
+            {
+             "tag":"Asthma symptoms",
+             "patterns":["coughing",
+             "tightness in the chest",
+             "shortness of breath",
+             "difficulty talking",
+             "panic",
+             "fatigue"],
+             "responses":["It seem that you are suffering from Asthma"]
+            },
+            {
+             "tag":"Arthritis symptoms",
+             "patterns":["Joint pain and stiffness",
+             "Swelling and redness around the joints",
+             "Decreased range of motion",
+             "Joint deformities (in advanced cases)",
+             "Difficulty with daily activities"],
+             "responses":["It seems that you are suffering from Arthritis"]
+            },
+            {
+             "tag":"Osteoporosis symptoms",
+             "patterns":["Bone pain",
+             "Frequent fractures, especially in the spine, hip, or wrist",
+             "Loss of height over time",
+             "Stooped posture"],
+             "responses":["It seems that you are suffering from Osteoporosis"]
+            },
+            {
+             "tag":"Depression symptoms",
+             "patterns":["Hopeless outlook",
+             "Lost interest",
+             "Increased fatigue",
+             "sleep problem",
+             "Anxiety",
+             "change in weight",
+             "Looking at death"],
+             "responses":["It seem that you are suffering from depression"]
+            },
+            {
+             "tag":"Migraines symptoms",
+             "patterns":["Severe headache, often on one side of the head",
+             "Nausea and vomiting",
+             "Sensitivity to light, sound, or smells",
+             "Visual disturbances (flashing lights, blind spots, etc.)"],
+             "responses":["It seems that you are suffering from Migraines"]
+            },
+            {
+             "tag":"Gastroesophageal reflux disease symptoms",
+             "patterns":["Heartburn (burning sensation in the chest)",
+             "Regurgitation of food or sour liquid",
+             "Chest pain",
+             "Difficulty swallowing",
+             "Chronic cough or hoarseness"],
+             "responses":["It seems that you are suffering from Gastroesophageal reflux disease"]
+            },
+            {
+             "tag":"Urinary tract infection symptoms",
+             "patterns":["Frequent and urgent need to urinate",
+             "Burning sensation during urination",
+             "Cloudy or strong-smelling urine",
+             "Pelvic pain (in women)",
+             "Blood in the urine (in some cases)"],
+             "responses":["It seems that you are suffering from Urinary tract infection"]
+            },
+            {
+             "tag":"Chronic obstructive pulmonary disease symptoms",
+             "patterns":["Chronic cough",
+             "Shortness of breath, especially during physical activity",
+             "Wheezing",
+             "Chest tightness",
+             "Frequent respiratory infections"],
+             "responses":["It seems that you are suffering from Chronic obstructive pulmonary disease"]
+            },
+            {
+             "tag":"Heart disease symptoms",
+             "patterns":["Chest pain or discomfort (angina)",
+             "Shortness of breath",
+             "Fatigue",
+             "Irregular heartbeat",
+             "Swelling in the legs, ankles, or feet (edema)"],
+             "responses":["It seems that you are suffering from Heart disease"]
+            },
+            {
+             "tag":"Allergies symptoms",
+             "patterns":["Sneezing",
+             "Runny or stuffy nose",
+             "Itchy or watery eyes",
+             "Itchy throat or ears",
+             "Skin rash or hives"],
+             "responses":["It seems that you are suffering from Allergies"]
+            },
+            {
+             "tag":"Insomnia symptoms",
+             "patterns":["Difficulty falling asleep",
+             "Difficulty staying asleep and frequent awakenings during the night",
+             "Waking up too early in the morning",
+             "Daytime sleepiness and fatigue",
+             "Irritability and difficulty concentrating"],
+             "responses":["It seems that you are suffering from Insomnia"]
+            },
+            {
+             "tag":"Gout symptoms",
+             "patterns":["Sudden and severe joint pain, often in the big toe",
+             "Swelling, redness, and warmth in the affected joint",
+             "Limited range of motion",
+             "Tenderness and inflammation in the affected area"],
+             "responses":["It seems that you are suffering from Gout"]
+            },
+            {
+             "tag":"common cold prevention",
+             "patterns":["What medicines can I buy to help me with common cold?","tell me some prevention method from common cold","What should I eat or drink if i am suffering from common cold?","How can I keep from getting a cold or the flu?","what are the preventions for common cold","can you suggest a food for common cold","what are the foods to intake for common cold"],
+             "responses":["\nCommon Cold: \nMedication: Dextromethorphan,Decongestant,Diphenhydramine,Crocin Cold & Flu Max. \nPrevention: Wash your hands,Avoid touching your face,Clean frequently used surfaces,Use hand sanitizers. \nFood Suggestions: Garlic,Vitamin C–containing fruits,Leafy greens,Broccoli,Oatmeal,Spices,Chicken Soup"]
+            },
+            {
+             "tag":"fever prevention",
+             "patterns":["What medicines can I buy to help me with fever?","tell me some prevention method from fever","What should I eat or drink if i am suffering from fever?","How can I keep from getting a fever?","what are the preventions for fever","can you suggest a food for fever","what are the foods to intake for fever"],
+             "responses":["\nFever: \nMedication: acetaminophen ,ibuprofen,aspirin,Crocin Cold & Flu Max. \nPrevention: Wash your hands,Cover your mouth when you cough and your nose when you sneeze,Clean frequently used surfaces,Avoid sharing cups, glasses, and eating utensils with other people. \nFood Suggestions: Garlic,Vitamin C–containing fruits,Leafy greens,Broccoli,Oatmeal,Spices,Chicken Soup"]
+            },
+            {
+             "tag":"high blood pressure prevention",
+             "patterns":["What medicines can I buy to help me with High blood pressure?","tell me some prevention method from High blood pressure","What should I eat or drink if i am suffering from High blood pressure?","How can I keep from getting High blood pressure?","what are the preventions for High blood pressure","can you suggest a food for High blood pressure","what are the foods to intake for high blood pressure"],
+             "responses":["\nHigh blood pressure: \nMedication: ACE inhibitors, calcium channel blockers, diuretics, beta-blockers. \nPrevention: Maintain a healthy weight, exercise regularly, reduce salt intake, limit alcohol intake. \nFood suggestions: Increase potassium intake (fruits and vegetables), eat whole grains, reduce processed and fried foods."]
+            },
+            {
+             "tag":"diabetes prevention",
+             "patterns":["What medicines can I buy to help me with diabetes?","tell me some prevention method from diabetes","What should I eat or drink if i am suffering from diabetes?","How can I keep from getting diabetes?","what are the preventions for diabetes","can you suggest a food for diabetes","what are the foods to intake for diabetes","what are the diet plan for diabetes"],
+             "responses":["\nType 2 diabetes: \nMedication: Insulin ,Amylinomimetic drug,Dipeptidyl peptidase-4 (DPP-4) inhibitor. \nPrevention: Cut Sugar and Refined Carbs From Your Diet,Work Out Regularly,Drink Water as Your Primary Beverage,Lose Weight If You’re Overweight or Obese,Quit Smoking, Follow a Very-Low-Carb Diet,Watch Portion Sizes. \nFood Suggestions: Leafy greens,Avocados,Eggs"]
+            },
+            {
+             "tag":"high cholesterol prevention",
+             "patterns":["What medicines can I buy to help me with High cholesterol?","tell me some prevention method from High cholesterol","What should I eat or drink if i am suffering from High cholesterol?","How can I keep from getting High cholesterol?","what are the preventions for High cholesterol","can you suggest a food for High cholesterol","what are the foods to intake for high cholesterol","what are the diet plan for high cholesterol"],
+             "responses":["\nHigh cholesterol: \nMedication: Statins, bile acid sequestrants, nicotinic acid, fibric acid derivatives. \nPrevention: Maintain a healthy weight, exercise regularly, limit saturated and trans fats, quit smoking. \nFood suggestions: Eat a diet rich in fruits, vegetables, and whole grains, limit red meat and dairy, choose healthy fats (olive oil, nuts, fish)."]
+            },
+            {
+             "tag":"depression prevention",
+             "patterns":["What medicines can I buy to help me with depression?","tell me some prevention method from depression","What should I eat or drink if i am suffering from depression?","How can I keep from getting depression?","what are the preventions for depression","can you suggest a food for depression","what are the foods to intake for depression"],
+             "responses":["\nDepression: \nMedication:  brexpiprazole, quetiapine,olanzapine. \nPrevention: Exercise regularly,Cut back on social media time,Drink Water as Your Primary Beverage,Build strong relationships,Minimize your daily choices, Follow a Very-Low-Carb Diet. \nFood Suggestions: Get Enough Vitamin D,Include Omega-3 Fatty Acids,Beans and legumes"]
+            },
+            {
+             "tag":"arthritis prevention",
+             "patterns":["What medicines can I buy to help me with Arthritis?","tell me some prevention method from Arthritis","What should I eat or drink if i am suffering from Arthritis?","How can I keep from getting Arthritis?","what are the preventions for Arthritis","can you suggest a food for Arthritis","what are the foods to intake for Arthritis"],
+             "responses":["\nArthritis: \nMedication: Nonsteroidal anti-inflammatory drugs (NSAIDs), disease-modifying antirheumatic drugs (DMARDs), corticosteroids. \nPrevention: Maintain a healthy weight, exercise regularly, avoid repetitive motions, use proper posture and body mechanics. \nFood suggestions: Eat a diet rich in omega-3 fatty acids (fish, nuts, seeds), choose whole grains, limit processed and fried foods."]
+            },
+            {
+             "tag":"osteoporosis prevention",
+             "patterns":["What medicines can I buy to help me with Osteoporosis?","tell me some prevention method from Osteoporosis","What should I eat or drink if i am suffering from Osteoporosis?","How can I keep from getting Osteoporosis?","what are the preventions for Osteoporosis","can you suggest a food for Osteoporosis","what are the foods to intake for Osteoporasis"],
+             "responses":["\nOsteoporosis: \nMedication: Bisphosphonates, calcitonin, selective estrogen receptor modulators (SERMs), hormone therapy. \nPrevention: Get enough calcium and vitamin D, exercise regularly, quit smoking, limit alcohol intake. \nFood suggestions: Eat a diet rich in calcium (dairy, leafy greens, fish), choose fortified foods, increase vitamin D intake (fortified milk, salmon, eggs)."]
+            },
+            {
+             "tag":"asthma prevention",
+             "patterns":["What medicines can I buy to help me with asthma?","tell me some prevention method from asthma","What should I eat or drink if i am suffering from asthma?","How can I keep from getting asthma?","what are the preventions for asthma","can you suggest a food for asthma","what are the foods to intake for asthma"],
+             "responses":["\nAsthma: \nMedication: epinephrine,anticholinergic,Proair HFA. \nPrevention: Identify Asthma Triggers, Stay Away From Allergens,Avoid Smoke of Any Type. \nFood Suggestions:carrots,juice,eggs,broccoli,cantaloupe,milk"]
+            },
+            {
+             "tag":"migraines prevention",
+             "patterns":["What medicines can I buy to help me with Migraines?","tell me some prevention method from Migraines","What should I eat or drink if i am suffering from Migraines?","How can I keep from getting Migraines?","what are the preventions for Migraines","can you suggest a food for Migraines","what are the foods to intake for Migraines"],
+             "responses":["\nMigraines: \nMedication: Triptans, ergot derivatives, nonsteroidal anti-inflammatory drugs (NSAIDs), beta-blockers. \nPrevention: Identify triggers (stress, food, sleep patterns), manage stress, get enough sleep, exercise regularly. \nFood suggestions: Eat a balanced diet, avoid trigger foods (chocolate, cheese, caffeine), stay hydrated."]
+            },
+            {
+             "tag":"gastroesophageal reflux disease prevention",
+             "patterns":["What medicines can I buy to help me with Gastroesophageal reflux disease?","tell me some prevention method from Gastroesophageal reflux disease","What should I eat or drink if i am suffering from Gastroesophageal reflux disease?","How can I keep from getting Gastroesophageal reflux disease?","what are the preventions for Gastroesophageal reflux disease","can you suggest a food for Gastroesophageal reflux disease","what are the foods to intake for GERD","preventions for GERD"],
+             "responses":["\nGastroesophageal reflux disease (GERD): \nMedication: Proton pump inhibitors (PPIs), H2 blockers, antacids, prokinetics. \nPrevention: Maintain a healthy weight, avoid trigger foods (spicy or fatty foods, caffeine, alcohol), eat smaller meals, don't lie down after eating. \nFood suggestions: Eat a balanced diet, avoid trigger foods."]
+            },
+            {
+             "tag":"urinary tract infection prevention",
+             "patterns":["What medicines can I buy to help me with Urinary tract infection?","tell me some prevention method from Urinary tract infection","What should I eat or drink if i am suffering from Urinary tract infection?","How can I keep from getting Urinary tract infection?","what are the preventions for Urinary tract infection","suggest a food for Urinary tract infection","what are the foods to intake for UTI","preventions for UTI"],
+             "responses":["\nUrinary tract infection (UTI): \nMedication: Antibiotics, urinary analgesics. \nPrevention: Stay hydrated, practice good hygiene, urinate frequently, wipe front to back. \nFood suggestions: Drink plenty of water, increase vitamin C intake (citrus fruits, berries), avoid irritants (caffeine, alcohol, spicy foods)."]
+            },
+            {
+             "tag":"chronic obstructive pulmonary disease prevention",
+             "patterns":["What medicines can I buy to help me with Chronic obstructive pulmonary disease?","tell me some prevention method from Chronic obstructive pulmonary disease","What should I eat or drink if i am suffering from Chronic obstructive pulmonary disease?","How can I keep from getting Chronic obstructive pulmonary disease?","what are the preventions for Chronic obstructive pulmonary disease","suggest a food for Chronic obstructive pulmonary disease","what are the foods to intake for COPD","preventions for COPD"],
+             "responses":["\nChronic obstructive pulmonary disease (COPD): \nMedication: Bronchodilators, inhaled corticosteroids, oxygen therapy, antibiotics. \nPrevention: Quit smoking, avoid secondhand smoke and other irritants, exercise regularly, get vaccinated. \nFood suggestions: Eat a balanced diet, maintain a healthy weight, avoid processed and fried foods, increase omega-3 fatty acid intake (fish, nuts, seeds)."]
+            },
+            {
+             "tag":"heart disease prevention",
+             "patterns":["What medicines can I buy to help me with Heart disease?","tell me some prevention method from Heart disease","What should I eat or drink if i am suffering from Heart disease?","How can I keep from getting Heart disease?","what are the preventions for Heart disease","suggest a food for Heart disease","what are the foods to intake for heart disease"],
+             "responses":["\nHeart disease: \nMedication: Statins, antiplatelet agents, angiotensin-converting enzyme (ACE) inhibitors, beta-blockers. \nPrevention: Maintain a healthy weight, exercise regularly, quit smoking, manage stress. \nFood suggestions: Eat a diet rich in fruits, vegetables, and whole grains, limit red meat and processed foods, choose healthy fats (olive oil, nuts, fish)."]
+            },
+            {
+             "tag":"allergies prevention",
+             "patterns":["What medicines can I buy to help me with Allergies?","tell me some prevention method from Allergies","What should I eat or drink if i am suffering from Allergies?","How can I keep from getting Allergies?","what are the preventions for Allergies","suggest a food for Allergies","what are the foods to intake for Allergies"],
+             "responses":["\nAllergies: \nMedication: Antihistamines, decongestants, corticosteroids, immunotherapy. \nPrevention: Identify triggers (pollen, dust mites, pet dander), avoid triggers, use air filters, wash hands frequently. \nFood suggestions: Eat a balanced diet, avoid trigger foods (if applicable), increase vitamin C intake (citrus fruits, berries)."]
+            },
+            {
+             "tag":"insomnia prevention",
+             "patterns":["What medicines can I buy to help me with Insomnia?","tell me some prevention method from Insomnia","What should I eat or drink if i am suffering from Insomnia?","How can I keep from getting Insomnia?","what are the preventions for Insomnia","suggest a food for Insomnia","what are the foods to intake for Insomnia"],
+             "responses":["\nInsomnia: \nMedication: Sedative-hypnotics, antidepressants, antipsychotics, melatonin. \nPrevention: Establish a regular sleep schedule, create a relaxing bedtime routine, avoid caffeine and alcohol, exercise regularly. \nFood suggestions: Eat a balanced diet, limit caffeine and alcohol, avoid heavy meals before bedtime, drink warm milk or herbal tea."]
+            },
+            {
+             "tag":"gout prevention",
+             "patterns":["What medicines can I buy to help me with Gout?","tell me some prevention method from Gout","What should I eat or drink if i am suffering from Gout?","How can I keep from getting Gout?","what are the preventions for Gout","suggest a food for Gout","what are the foods to intake for Gout"],
+             "responses":["\nGout: \nMedication: Nonsteroidal anti-inflammatory drugs (NSAIDs), colchicine, corticosteroids, urate-lowering therapy. \nPrevention: Maintain a healthy weight, limit alcohol intake, avoid high-purine foods (red meat, organ meats, seafood), stay hydrated. \nFood suggestions: Eat a balanced diet, increase vitamin C intake (citrus fruits, berries), choose low-fat dairy products."]
+            },
+            {
+             "tag":"Consultation",
+             "patterns": ["who should i contact for consultation?","is there any doctor available?","can you give me some suggestions for doctor consultations?","can you set up a meeting with a doctor for consultation?","is there any doctor available for consultation"],
+             "responses":["\nYou can contact various doctors here for any kind of consultation: 1. https://www.1mg.com/online-doctor-consultation, 2. https://www.tatahealth.com/online-doctor-consultation/general-physician, 3. https://www.doconline.com/, or you can pay a visit to your local area doctor or family doctor."]
+            }
+]}
+        
